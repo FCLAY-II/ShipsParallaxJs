@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  position: absolute;
+  left: -10%;
+  width: 120%;
+  height: 100vh;
+  background: radial-gradient(#e1f1e5, #acdabb);
+}
+.container #scene .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+.container .layer img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wave_1 {
+  bottom: 144px;
+  height: 15px;
+  animation: wave 6.66667s 0.1s infinite linear;
+}
+.wave_2 {
+  bottom: 144px;
+  height: 115px;
+  animation: wave 6.66667s 0.1s infinite linear;
+}
+.wave_3 {
+  bottom: 108px;
+  height: 144px;
+  animation: wave 6.22222s 0.1s infinite linear;
+}
+.wave_4 {
+  animation: wave 5.77778s 0.1s infinite linear;
+  bottom: 72px;
+  height: 173px;
+}
+
+/* @keyframes wave {
+  0% {
+    transform: rotateZ(0deg) translate3d(0, 10%, 0) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg) translate3d(0, 10%, 0) rotateZ(-360deg);
+  }
+} */
